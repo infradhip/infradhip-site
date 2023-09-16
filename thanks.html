@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .icon {
+    font-size: 72px;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  .message {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 0;
+  }
+  #home-link {
+    font-size: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  #home-link:hover {
+    color: #0056b3;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <div class="message">
+      Thank You!
+    </div>
+    <p>Your form has been successfully submitted.</p>
+    <p>You will be redirected to the <a id="home-link" href="/">Homepage</a> in 2 seconds.</p>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = "/";
+    }, 2000); // Redirect after 2 seconds
+  </script>
+</body>
+</html>
